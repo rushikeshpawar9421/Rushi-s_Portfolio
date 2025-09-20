@@ -1,166 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rushikesh Pawar | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <style>
-    html { scroll-behavior: smooth; }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rushikesh Pawar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        html { scroll-behavior: smooth; }
 
-    /* Typing effect */
-    .typing {
-      border-right: .15em solid #fff;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 0;
-      animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
-    }
-    @keyframes typing { from { width: 0 } to { width: 100% } }
-    @keyframes blink { 50% { border-color: transparent; } }
+        /* Typing effect */
+        .typing {
+            border-right: .15em solid #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+        }
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink { 50% { border-color: transparent; } }
 
-    /* Hover button animation */
-    .hover-scale:hover { transform: scale(1.05); transition: all 0.3s ease-in-out; }
-    .pulse-skill { animation: pulse 2s infinite; }
-  </style>
+        /* Hover button animation */
+        .hover-scale:hover { transform: scale(1.05); transition: all 0.3s ease-in-out; }
+        .pulse-skill { animation: pulse 2s infinite; }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition duration-500">
 
-  <!-- Navbar -->
-  <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Rushikesh Pawar</h1>
-      <ul class="flex space-x-6 font-medium">
-        <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400">About</a></li>
-        <li><a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400">Skills</a></li>
-        <li><a href="#experience" class="hover:text-blue-600 dark:hover:text-blue-400">Experience</a></li>
-        <li><a href="#education" class="hover:text-blue-600 dark:hover:text-blue-400">Education</a></li>
-        <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400">Contact</a></li>
-      </ul>
-      <button id="darkToggle" class="ml-4 text-xl">
-        <i class="bx bx-moon dark:hidden"></i>
-        <i class="bx bx-sun hidden dark:inline"></i>
-      </button>
-    </nav>
-  </header>
+    <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">Rushikesh Pawar</h1>
+            <ul class="flex space-x-6 font-medium">
+                <li><a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400">Skills</a></li>
+                <li><a href="#experience" class="hover:text-blue-600 dark:hover:text-blue-400">Experience</a></li>
+                <li><a href="#education" class="hover:text-blue-600 dark:hover:text-blue-400">Education</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400">Contact</a></li>
+            </ul>
+            <button id="darkToggle" class="ml-4 text-xl">
+                <i class="bx bx-moon dark:hidden"></i>
+                <i class="bx bx-sun hidden dark:inline"></i>
+            </button>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-    <!-- Profile Image -->
-    <img src="images/profile.jpg" alt="Rushikesh Pawar" class="w-40 h-40 object-cover rounded-full mx-auto mb-4 shadow-lg" data-aos="zoom-in">
+    <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <img src="images.jpg" alt="Rushikesh Pawar's Profile Photo" class="w-40 h-40 object-cover rounded-full mx-auto mb-4 shadow-lg" data-aos="zoom-in">
 
-    <h2 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Hi, I'm Rushikesh Pawar</h2>
-    <p class="text-lg md:text-xl max-w-3xl typing" data-aos="fade-up" data-aos-delay="500">
-      Welcome to my portfolio! I'm an Android developer with expertise in Java, passionate about turning ideas into seamless applications. Let's create innovative and user-friendly solutions together!
-    </p>
-    <div class="mt-6 flex flex-wrap justify-center gap-4" data-aos="zoom-in" data-aos-delay="1000">
-      <a href="#contact" class="px-6 py-2 bg-white text-blue-600 rounded-lg font-semibold shadow hover:bg-gray-200 hover-scale">Contact Me</a>
-      <a href="#skills" class="px-6 py-2 border border-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 hover-scale">My Skills</a>
-      <a href="https://www.instagram.com/rushikesh_here_17" target="_blank" class="px-6 py-2 border border-pink-500 rounded-lg text-pink-500 font-semibold hover:bg-pink-500 hover:text-white flex items-center hover-scale">
-        <i class="bx bxl-instagram mr-2"></i> Instagram
-      </a>
-      <a href="https://wa.me/917038501655" target="_blank" class="px-6 py-2 bg-green-500 text-white rounded-lg font-semibold flex items-center hover:bg-green-600 hover-scale">
-        <i class="bx bxl-whatsapp mr-2"></i> WhatsApp
-      </a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-16 container mx-auto px-6" data-aos="fade-right">
-    <h3 class="text-3xl font-bold text-center mb-8">About Me</h3>
-    <p class="text-lg text-center max-w-3xl mx-auto">
-      Welcome to my portfolio! I'm an Android developer with expertise in Java, passionate about turning ideas into seamless applications. Let's create innovative and user-friendly solutions together!
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-16 bg-gray-50 dark:bg-gray-800">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Skills</h3>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="100">Java</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="200">C</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="300">C++</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="400">Python</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="500">Android Development</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="600">API Integration</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="700">Android Studio</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="800">Project Management</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="900">Project Handling</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="1000">Leadership</div>
-        <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="1100">Team Work</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="py-16 container mx-auto px-6" data-aos="fade-left">
-    <h3 class="text-3xl font-bold text-center mb-8">Experience</h3>
-    <div class="bg-white dark:bg-gray-700 p-6 shadow rounded-lg" data-aos="fade-up" data-aos-delay="200">
-      <h4 class="text-xl font-semibold">Industrial Training - Android Development</h4>
-      <p class="mt-2">
-        Gained comprehensive training in Android Development at <b>Mountreach Solution Private Limited</b>. Acquired expertise in designing intuitive user interfaces, integrating APIs, and implementing robust back-end solutions. This training laid the foundation for my development journey, honing skills to deliver high-quality mobile applications.
-      </p>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="py-16 bg-gray-50 dark:bg-gray-800">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Education</h3>
-      <div class="bg-white dark:bg-gray-700 p-6 shadow rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
-        <h4 class="text-xl font-semibold">Diploma in Computer Engineering</h4>
-        <p class="mt-2">
-          Currently pursuing Final Year at <b> Takshshila Polytechnic Amravati</b>. Focused on enhancing technical skills and gaining practical experience in software development, particularly Android and web technologies.
+        <h2 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Hi, I'm Rushikesh Pawar</h2>
+        <p class="text-lg md:text-xl max-w-3xl typing" data-aos="fade-up" data-aos-delay="500">
+            Welcome to my portfolio! I'm an Android developer with expertise in Java, passionate about turning ideas into seamless applications. Let's create innovative and user-friendly solutions together!
         </p>
-      </div>
-    </div>
-  </section>
+        <div class="mt-6 flex flex-wrap justify-center gap-4" data-aos="zoom-in" data-aos-delay="1000">
+            <a href="#contact" class="px-6 py-2 bg-white text-blue-600 rounded-lg font-semibold shadow hover:bg-gray-200 hover-scale">Contact Me</a>
+            <a href="#skills" class="px-6 py-2 border border-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 hover-scale">My Skills</a>
+            <a href="https://www.instagram.com/rushikesh_here_17" target="_blank" class="px-6 py-2 border border-pink-500 rounded-lg text-pink-500 font-semibold hover:bg-pink-500 hover:text-white flex items-center hover-scale">
+                <i class="bx bxl-instagram mr-2"></i> Instagram
+            </a>
+            <a href="https://wa.me/917038501655" target="_blank" class="px-6 py-2 bg-green-500 text-white rounded-lg font-semibold flex items-center hover:bg-green-600 hover-scale">
+                <i class="bx bxl-whatsapp mr-2"></i> WhatsApp
+            </a>
+        </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 container mx-auto px-6" data-aos="zoom-in">
-    <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
-    <div class="text-center">
-      <p class="mb-2">If you would like to get in touch, feel free to reach out via email, LinkedIn, Instagram, or WhatsApp. Alternatively, you can download my resume by clicking the link below.</p>
-      <p><b>Email:</b> <a href="mailto:rushipawar9421@gmail.com" class="text-blue-600 dark:text-blue-400">rushipawar9421@gmail.com</a></p>
-      <p><b>Phone:</b> +91 7038501655</p>
-      <div class="mt-4 flex flex-wrap justify-center gap-4">
-        <a href="#" class="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 hover-scale">Download Resume</a>
-        <a href="https://www.linkedin.com/in/rushi-builds-pawar-b2aa51385" target="_blank" class="px-6 py-2 border border-blue-600 rounded-lg text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover-scale">LinkedIn</a>
-        <a href="https://www.instagram.com/rushikesh_here_17?igsh=MXlwYjNqNHc3OTgx" target="_blank" class="px-6 py-2 border border-pink-500 rounded-lg text-pink-500 font-semibold hover:bg-pink-500 hover:text-white flex items-center hover-scale">
-          <i class="bx bxl-instagram mr-2"></i> Instagram
-        </a>
-        <a href="https://wa.me/917038501655" target="_blank" class="px-6 py-2 bg-green-500 text-white rounded-lg font-semibold flex items-center hover:bg-green-600 hover-scale">
-          <i class="bx bxl-whatsapp mr-2"></i> WhatsApp
-        </a>
-      </div>
-    </div>
-  </section>
+    <section id="about" class="py-16 container mx-auto px-6" data-aos="fade-right">
+        <h3 class="text-3xl font-bold text-center mb-8">About Me</h3>
+        <p class="text-lg text-center max-w-3xl mx-auto">
+            Welcome to my portfolio! I'm an Android developer with expertise in Java, passionate about turning ideas into seamless applications. Let's create innovative and user-friendly solutions together!
+        </p>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 text-center">
-    <p>&copy; 2025 Rushikesh Pawar. All Rights Reserved.</p>
-  </footer>
+    <section id="skills" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Skills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="100">Java</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="200">C</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="300">C++</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="400">Python</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="500">Android Development</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="600">API Integration</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="700">Android Studio</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="800">Project Management</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="900">Project Handling</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="1000">Leadership</div>
+                <div class="p-4 bg-white dark:bg-gray-700 shadow rounded-lg pulse-skill" data-aos="flip-left" data-aos-delay="1100">Team Work</div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Scripts -->
-  <script>
-    const toggleBtn = document.getElementById('darkToggle');
-    const htmlEl = document.documentElement;
+    <section id="experience" class="py-16 container mx-auto px-6" data-aos="fade-left">
+        <h3 class="text-3xl font-bold text-center mb-8">Experience</h3>
+        <div class="bg-white dark:bg-gray-700 p-6 shadow rounded-lg" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="text-xl font-semibold">Industrial Training - Android Development</h4>
+            <p class="mt-2">
+                Gained comprehensive training in Android Development at <strong>Mountreach Solution Private Limited</strong>. Acquired expertise in designing intuitive user interfaces, integrating APIs, and implementing robust back-end solutions. This training laid the foundation for my development journey, honing skills to deliver high-quality mobile applications.
+            </p>
+        </div>
+    </section>
 
-    toggleBtn.addEventListener('click', () => {
-      htmlEl.classList.toggle('dark');
-      localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
-    });
+    <section id="education" class="py-16 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Education</h3>
+            <div class="bg-white dark:bg-gray-700 p-6 shadow rounded-lg text-center" data-aos="fade-up" data-aos-delay="200">
+                <h4 class="text-xl font-semibold">Diploma in Computer Engineering</h4>
+                <p class="mt-2">
+                    Currently pursuing Final Year at <strong>Takshshila Polytechnic Amravati</strong>. Focused on enhancing technical skills and gaining practical experience in software development, particularly Android and web technologies.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    if (localStorage.getItem('theme') === 'dark') {
-      htmlEl.classList.add('dark');
-    }
+    <section id="contact" class="py-16 container mx-auto px-6" data-aos="zoom-in">
+        <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
+        <div class="text-center">
+            <p class="mb-2">If you would like to get in touch, feel free to reach out via email, LinkedIn, Instagram, or WhatsApp. Alternatively, you can download my resume by clicking the link below.</p>
+            <p><strong>Email:</strong> <a href="mailto:rushipawar9421@gmail.com" class="text-blue-600 dark:text-blue-400">rushipawar9421@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 7038501655</p>
+            <div class="mt-4 flex flex-wrap justify-center gap-4">
+                <a href="#" class="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 hover-scale">Download Resume</a>
+                <a href="https://www.linkedin.com/in/rushi-builds-pawar-b2aa51385" target="_blank" class="px-6 py-2 border border-blue-600 rounded-lg text-blue-600 font-semibold hover:bg-blue-600 hover:text-white hover-scale">LinkedIn</a>
+                <a href="https://www.instagram.com/rushikesh_here_17?igsh=MXlwYjNqNHc3OTgx" target="_blank" class="px-6 py-2 border border-pink-500 rounded-lg text-pink-500 font-semibold hover:bg-pink-500 hover:text-white flex items-center hover-scale">
+                    <i class="bx bxl-instagram mr-2"></i> Instagram
+                </a>
+                <a href="https://wa.me/917038501655" target="_blank" class="px-6 py-2 bg-green-500 text-white rounded-lg font-semibold flex items-center hover:bg-green-600 hover-scale">
+                    <i class="bx bxl-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
 
-    AOS.init({ duration: 1000, once: true });
-  </script>
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2025 Rushikesh Pawar. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('darkToggle');
+        const htmlEl = document.documentElement;
+
+        toggleBtn.addEventListener('click', () => {
+            htmlEl.classList.toggle('dark');
+            localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        if (localStorage.getItem('theme') === 'dark') {
+            htmlEl.classList.add('dark');
+        }
+
+        AOS.init({ duration: 1000, once: true });
+    </script>
 
 </body>
 </html>
